@@ -1,5 +1,6 @@
 import './App.css';
 import Card from './components/card/Card';
+import Grid from './components/UI/grid/Grid';
 import UserCard from './components/userCard/UserCard';
 
 function App() {
@@ -7,9 +8,15 @@ function App() {
     <div className='App container'>
       <h1>React</h1>
       <Card />
-      <div className='cardsGrid'>
-        <UserCard />
-      </div>
+      <Grid>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Grid>
+
+      {/* <UserCard /> */}
     </div>
   );
 }
